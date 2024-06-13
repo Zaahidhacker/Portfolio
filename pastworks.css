@@ -1,0 +1,135 @@
+body {
+    background: url("background\ color\ search.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins";
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+h1 {
+    text-align: center;
+    color: #154257;
+    text-shadow: 
+        1px 1px 0 white,
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 0 0 white,
+        -1px 0 0 white,
+        0 1px 0 white,
+        0 -1px 0 white;
+    font-size: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.webdevheading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.tablename {
+    font-size: 50px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.tablepic {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border: 3px solid rgb(109, 107, 107);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.aboutmecardname {
+    font-size: 50px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.aboutmepic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border: 3px solid rgb(109, 107, 107);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.pythondevheading {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 300px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.coffeeshopname {
+    font-size: 50px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.coffeeshoppic {
+    width: 900px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(109, 107, 107);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.youtubeautomatorname {
+    font-size: 50px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.youtubeautomatorpic {
+    width: 900px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(109, 107, 107);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.taskautomatorname {
+    font-size: 50px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.taskautomatorpic {
+    width: 900px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(109, 107, 107);
+    animation: fadeIn 2s ease-in-out;
+}

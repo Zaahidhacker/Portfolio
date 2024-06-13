@@ -1,0 +1,393 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://th.bing.com/th/id/R.e7b98af026b39429f7b0e71a1f728ee7?rik=M%2fgKZKMveRzo9A&pid=ImgRaw&r=0");
+  background-position: center;
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -1;
+}
+
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes staggeredFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the .welcome class */
+.welcome {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 60px; /* Increased font size */
+  color: rgb(24,52,76);
+  margin-bottom: 80px;
+  text-align: center;
+  margin-top: 150px;
+  animation: fadeIn 2s ease-in-out; /* Animation properties */
+  text-shadow: 1px 1px 0 #ffffff, 
+  -1px -1px 0 #ffffff, 
+  -1px 1px 0 #ffffff, 
+  1px -1px 0 #ffffff,
+  1px 1px 2px #ffffff, 
+  -1px -1px 2px #ffffff, 
+  -1px 1px 2px #ffffff, 
+  1px -1px 2px #ffffff;;
+}
+
+
+.about {
+  font-size: 25px; /* Increased font size */
+  color: white;
+  font-family: "Poppins";
+  font-weight: 400;
+  padding: 30px; /* Increased padding */
+  animation: fadeIn 2s ease-in-out;
+}
+
+img {
+  height: 180px; /* Increased height */
+  width: 180px; /* Increased width */
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+  padding: 30px; /* Increased padding */
+  margin-top: 15px; /* Increased margin */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.main {
+  border-radius: 40px;
+  border: 2px solid grey;
+  padding-bottom: 0px;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 700px; /* Increased max width */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.links {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 60px; /* Increased font size */
+  color: white;
+  padding: 15px 15px 8px 15px; /* Increased padding */
+  text-align: center;
+  margin-top: 80px; /* Increased margin */
+  font-style: oblique;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.linksp {
+  font-size: 25px; /* Increased font size */
+  color: white;
+  font-family: "Poppins";
+  font-weight: 400;
+  padding: 8px; /* Increased padding */
+  text-align: center;
+  margin-bottom: 8px; /* Increased margin */
+}
+
+.youtubelink {
+  background-color: white;
+  color: slateblue;
+  border-radius: 12px; /* Increased border radius */
+  font-size: 18px; /* Increased font size */
+  padding: 6px; /* Increased padding */
+  margin-right: 15px; /* Increased margin */
+  display: inline-block;
+  position: relative;
+}
+.twitterlink {
+  background-color: white;
+  color: slateblue;
+  border-radius: 12px; /* Increased border radius */
+  font-size: 18px; /* Increased font size */
+  padding: 6px; /* Increased padding */
+  margin-right: 15px; /* Increased margin */
+  display: inline-block;
+  position: relative;
+}
+.redditlink {
+  background-color: white;
+  color: slateblue;
+  border-radius: 12px; /* Increased border radius */
+  font-size: 18px; /* Increased font size */
+  padding: 6px; /* Increased padding */
+  margin-right: 15px; /* Increased margin */
+  display: inline-block;
+  position: relative;
+}
+.gmaillink {
+  background-color: white;
+  color: slateblue;
+  border-radius: 12px; /* Increased border radius */
+  font-size: 18px; /* Increased font size */
+  padding: 6px; /* Increased padding */
+  margin-right: 15px; /* Increased margin */
+  display: inline-block;
+  position: relative;
+}
+
+.youtubeicon {
+  display: block;
+  width: 60px; /* Increased width */
+  height: 60px; /* Increased height */
+  margin-left: 25px; /* Increased margin */
+  float: left;
+}
+.twittericon {
+  display: block;
+  width: 60px; /* Increased width */
+  height: 60px; /* Increased height */
+  margin-left: 25px; /* Increased margin */
+  float: left;
+}
+.redditicon {
+  display: block;
+  width: 60px; /* Increased width */
+  height: 60px; /* Increased height */
+  margin-left: 25px; /* Increased margin */
+  float: left;
+}
+.gmaillicon {
+  display: block;
+  width: 60px; /* Increased width */
+  height: 60px; /* Increased height */
+  margin-left: 25px; /* Increased margin */
+  float: left;
+}
+  
+
+.youtubebox {
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 8px; /* Increased padding */
+  margin-left: 200px; /* Increased margin */
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 350px; /* Increased max width */
+  max-height: 120px; /* Increased max height */
+  margin-bottom: 40px; /* Increased margin */
+  position: relative;
+  display: inline-block;
+}
+.twitterbox {
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 8px; /* Increased padding */
+  margin-left: 25px; /* Increased margin */
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 350px; /* Increased max width */
+  max-height: 120px; /* Increased max height */
+  margin-bottom: 40px; /* Increased margin */
+  position: relative;
+  display: inline-block;
+}
+.redditbox {
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 8px; /* Increased padding */
+  margin-left: 25px; /* Increased margin */
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 350px; /* Increased max width */
+  max-height: 120px; /* Increased max height */
+  margin-bottom: 40px; /* Increased margin */
+  position: relative;
+  display: inline-block;
+}
+.emailbox {
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 8px; /* Increased padding */
+  margin-left: 25px; /* Increased margin */
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 350px; /* Increased max width */
+  max-height: 120px; /* Increased max height */
+  margin-bottom: 40px; /* Increased margin */
+  position: relative;
+  display: inline-block;
+}
+
+.pastworks {
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 50px; /* Increased font size */
+  text-align: center;
+  color: white;
+  margin-bottom: 30px; /* Increased margin */
+  margin-top: 60px; /* Increased margin */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.pastworkslink {
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 30px; /* Increased font size */
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  border: 1px solid grey;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(45deg, rgb(24, 61, 87), rgb(2, 19, 49));
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.pastworkslink a {
+  color: #ffffff75; /* Change to your desired color */
+  text-decoration: underline; /* Optional: removes underline */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.pastworkslink a:hover {
+  color: #00000071; /* Change to your desired hover color */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.arcytname {
+  font-family: "Rubik";
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+  text-align: center; /* Center the text */
+  margin-top: 50px; /* Add some space at the top */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.arcyt {
+  border-radius: 30px;
+  border: 2px solid grey;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  margin: 20px auto; /* Center the table */
+  width: fit-content; /* Fit the content */
+  animation: fadeIn 2s ease-in-out;
+}
+
+.arcytvideo {
+  border-radius: 30px;
+  height: 400px;
+  width: 850px; /* Set a reasonable width */
+  display: block;
+  margin: 0 auto; /* Center the image */
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Staggering animation */
+.youtubelink, 
+.youtubebox, 
+.youtubeicon, 
+.twitterlink, 
+.twitterbox, 
+.twittericon, 
+.redditlink, 
+.redditbox, 
+.redditicon, 
+.gmaillink, 
+.emailbox, 
+.gmailicon {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+
+/* Stagerring animation finished */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 80px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 100px;
+  width: 90px;
+  box-sizing: border-box;
+  visibility: hidden;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+  box-sizing: border-box;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  box-sizing: border-box;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
